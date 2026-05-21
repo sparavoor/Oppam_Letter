@@ -60,9 +60,6 @@ export default function StudentPortal() {
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
             Oppam <span className="text-indigo-650">—</span> Will be with you
           </h2>
-          <p className="text-sm md:text-base text-slate-550 mt-2 font-medium tracking-wide">
-            SSF Pulikkal Division Sahityotsav 2026
-          </p>
         </div>
 
         {/* Form Container */}
@@ -110,7 +107,7 @@ export default function StudentPortal() {
                       name="name"
                       id="name"
                       required
-                      placeholder="e.g., Rahul Dev"
+                      placeholder="Enter your full name"
                       className={`block w-full pl-10 pr-4 py-3 bg-slate-50/50 border ${state?.errors?.name ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-slate-200 focus:ring-indigo-500 focus:border-indigo-600'} rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 transition-all duration-200 text-sm`}
                     />
                   </div>
@@ -136,7 +133,7 @@ export default function StudentPortal() {
                       name="mobile"
                       id="mobile"
                       required
-                      placeholder="e.g., 9876543210"
+                      placeholder="Enter 10-digit mobile number"
                       className={`block w-full pl-10 pr-4 py-3 bg-slate-50/50 border ${state?.errors?.mobile ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-slate-200 focus:ring-indigo-500 focus:border-indigo-600'} rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 transition-all duration-200 text-sm`}
                     />
                   </div>
@@ -162,7 +159,7 @@ export default function StudentPortal() {
                       name="location"
                       id="location"
                       required
-                      placeholder="e.g., North Paravoor, Ernakulam"
+                      placeholder="Enter your location/place"
                       className={`block w-full pl-10 pr-4 py-3 bg-slate-50/50 border ${state?.errors?.location ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-slate-200 focus:ring-indigo-500 focus:border-indigo-600'} rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 transition-all duration-200 text-sm`}
                     />
                   </div>
@@ -202,7 +199,7 @@ export default function StudentPortal() {
                   required
                   rows={8}
                   onChange={(e) => setCharCount(e.target.value.length)}
-                  placeholder="Type your letter details here... Begin with a formal salutation, describe your request, and end with your signature details."
+                  placeholder="Type your letter details here..."
                   className={`block w-full p-4 bg-slate-50/50 border ${state?.errors?.letter_content ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-slate-200 focus:ring-indigo-500 focus:border-indigo-600'} rounded-xl text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 transition-all duration-200 text-sm`}
                 ></textarea>
                 {state?.errors?.letter_content && (
